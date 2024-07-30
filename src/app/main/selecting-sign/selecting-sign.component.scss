@@ -1,0 +1,44 @@
+.container {
+  padding: 4.5rem 4.5rem 3.75rem;
+  position: relative;
+
+  .bg-triangle {
+    height: 12rem;
+  }
+
+  .sign {
+    width: 9.625rem;
+    height: 9.625rem;
+    border: 1.25rem solid #000;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #e5e5e5;
+    padding-bottom: 1.5rem;
+
+    &.paper {
+      top: 0;
+      left: 0;
+      border-color: #4e6bf3;
+      box-shadow: inset 0 6px #babecd, 0 7px #2945c1;
+    }
+
+    &.scissors {
+      top: 0;
+      right: 0;
+      border-color: #eba319;
+      box-shadow: inset 0 6px #babecd, 0 7px #c76c1b;
+    }
+
+    &.rock {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-color: #da3955;
+      box-shadow: inset 0 6px #babecd, 0 7px #9e1735;
+      padding-bottom: 1.75rem;
+    }
+  }
+}
