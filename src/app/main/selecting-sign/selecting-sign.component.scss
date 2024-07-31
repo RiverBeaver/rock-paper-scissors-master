@@ -3,12 +3,12 @@
   position: relative;
 
   .bg-triangle {
-    height: 12rem;
+    height: 14rem;
   }
 
   .sign {
-    width: 9.625rem;
-    height: 9.625rem;
+    width: 10.5rem;
+    height: 10.5rem;
     border: 1.25rem solid #000;
     border-radius: 50%;
     position: absolute;
@@ -16,7 +16,14 @@
     justify-content: center;
     align-items: flex-end;
     background-color: #e5e5e5;
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    will-change: transform;
+
+    & img {
+      transform: scale(1.2);
+    }
 
     &.paper {
       top: 0;
@@ -38,7 +45,15 @@
       transform: translateX(-50%);
       border-color: #da3955;
       box-shadow: inset 0 6px #babecd, 0 7px #9e1735;
-      padding-bottom: 1.75rem;
+      padding-bottom: 2.25rem;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.rock:hover {
+      transform: scale(1.05) translateX(-48%);
     }
   }
 }
