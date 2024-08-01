@@ -1,60 +1,25 @@
 .container-picked {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   margin-top: 1.5rem;
 
   .picked {
     width: 17rem;
     display: grid;
-    gap: 3rem;
+    gap: 7rem;
     justify-items: center;
 
     h3 {
       color: white;
       font-weight: 600;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
   }
 }
 
 .sign {
-  width: 14rem;
-  height: 14rem;
+  transform: scale(1.5);
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  border-radius: 50%;
-  padding-bottom: 2.5rem;
-  background-color: #e5e5e5;
-  transition: all 0.3s ease-in-out;
-
-  img {
-    width: 5rem;
-  }
-
-  &.paper {
-    border: 1.75rem solid #4e6bf3;
-    box-shadow: inset 0 6px #babecd, 0 7px #2945c1;
-  }
-
-  &.scissors {
-    border: 1.75rem solid #eba319;
-    box-shadow: inset 0 6px #babecd, 0 7px #c76c1b;
-  }
-
-  &.rock {
-    border: 1.75rem solid #da3955;
-    box-shadow: inset 0 6px #babecd, 0 7px #9e1735;
-    padding-bottom: 2.75rem;
-  }
-
-  &.without {
-    background-color: #172240;
-    width: 11rem;
-    height: 11rem;
-
-    img {
-      opacity: 0;
-    }
-  }
+  align-items: center;
 }

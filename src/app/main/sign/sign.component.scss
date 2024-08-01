@@ -1,0 +1,63 @@
+div {
+  width: 10.5rem;
+  height: 10.5rem;
+  border: 1.25rem solid #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #e5e5e5;
+  padding-bottom: 2rem;
+  transition: width 0.5s, height 0.5s, border-color 0.2s, background-color 0.2ms,
+    box-shadow 0.7s;
+
+  & img {
+    transform: scale(1.2);
+    transition: opacity 0.7s;
+  }
+
+  &.paper {
+    border-color: #4e6bf3;
+    box-shadow: inset 0 6px #babecd, 0 7px #2945c1;
+  }
+
+  &.scissors {
+    border-color: #eba319;
+    box-shadow: inset 0 6px #babecd, 0 7px #c76c1b;
+  }
+
+  &.rock {
+    border-color: #da3955;
+    box-shadow: inset 0 6px #babecd, 0 7px #9e1735;
+    padding-bottom: 2.25rem;
+  }
+
+  &.without {
+    width: 7.25rem;
+    height: 7.25rem;
+    background-color: #172240;
+    border: transparent;
+
+    img {
+      opacity: 0;
+    }
+  }
+
+  &.selectingSign {
+    transition: transform 0.2s ease-in-out;
+    will-change: transform;
+    cursor: pointer;
+
+    &.rock {
+      transform: translateX(-50%);
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.rock:hover {
+      transform: scale(1.05) translateX(-47.5%);
+    }
+  }
+}

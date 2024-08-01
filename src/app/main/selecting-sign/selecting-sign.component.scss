@@ -7,53 +7,23 @@
   }
 
   .sign {
-    width: 10.5rem;
-    height: 10.5rem;
-    border: 1.25rem solid #000;
-    border-radius: 50%;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: #e5e5e5;
-    padding-bottom: 2rem;
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
-    will-change: transform;
-
-    & img {
-      transform: scale(1.2);
-    }
+    border: 1px solid transparent;
+    border-radius: 50%;
 
     &.paper {
       top: 0;
       left: 0;
-      border-color: #4e6bf3;
-      box-shadow: inset 0 6px #babecd, 0 7px #2945c1;
     }
 
     &.scissors {
       top: 0;
       right: 0;
-      border-color: #eba319;
-      box-shadow: inset 0 6px #babecd, 0 7px #c76c1b;
     }
 
     &.rock {
       bottom: 0;
       left: 50%;
-      transform: translateX(-50%);
-      border-color: #da3955;
-      box-shadow: inset 0 6px #babecd, 0 7px #9e1735;
-      padding-bottom: 2.25rem;
-    }
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    &.rock:hover {
-      transform: scale(1.05) translateX(-48%);
     }
   }
 }

@@ -1,14 +1,14 @@
 <div class="container-picked">
-  <div class="picked you">
+  <div class="picked user">
     <h3>YOU PICKED</h3>
-    <div class="sign scissors">
-      <img src="../../../assets/images/icon-scissors.svg" alt="Scissors" />
+    <div class="sign">
+      <app-sign [typeSign]="usersSign"></app-sign>
     </div>
   </div>
-  <div class="picked house">
+  <div class="picked computer">
     <h3>THE HOUSE PICKED</h3>
     <div class="sign without">
-      <img src="../../../assets/images/icon-scissors.svg" alt="Scissors" />
+      <app-sign [typeSign]="computerSign"></app-sign>
     </div>
   </div>
 </div>

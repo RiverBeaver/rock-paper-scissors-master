@@ -1,0 +1,14 @@
+<div
+  [ngClass]="{
+    paper: typeSign === 'paper',
+    scissors: typeSign === 'scissors',
+    rock: typeSign === 'rock',
+    without: typeSign === 'without',
+    selectingSign: isSelectingSign
+  }"
+>
+  <img
+    src="../../../assets/images/icon-{{ typeSign }}.svg"
+    alt="{{ typeSign }}"
+  />
+</div>

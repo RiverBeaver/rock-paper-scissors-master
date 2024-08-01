@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./getting-result.component.scss'],
 })
 export class GettingResultComponent {
+  public usersSign: string = 'scissors';
+  public computerSign: string = 'without';
+
   constructor() {
     setTimeout(() => {
-      const elem = document.querySelector('.picked.house .without');
-      elem?.classList.add('scissors');
-      elem?.classList.remove('without');
+      this.computerSign = 'paper';
     }, 1000);
   }
 }
